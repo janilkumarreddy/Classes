@@ -1,0 +1,5 @@
+http://support.smartbear.com/samples/testcomplete9/weborders/Process.aspx
+
+ Username: Tester
+
+Password:   test

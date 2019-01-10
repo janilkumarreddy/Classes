@@ -1,0 +1,54 @@
+package com.demo.classes;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class WaitsDemo {
+
+	public static WebDriver driver;
+	public static String url = "https://www.google.com/";
+
+	public static void main(String args[]) {
+
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\lib\\chromedriver_2_45.exe");
+		driver = new ChromeDriver();
+
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
+		//Implicitly wait
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		//ExplicitWait or webdriver wait
+		WebDriverWait wait1 = new WebDriverWait(driver,20);
+		wait1.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("ID"))));
+
+
+		//Fluent Wait
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(30, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class);
+
+		WebElement foo = wait.until(new Function<WebDriver, WebElement>() 
+		{
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(By.id("foo"));
+			}
+		});
+	}
+
+
+}

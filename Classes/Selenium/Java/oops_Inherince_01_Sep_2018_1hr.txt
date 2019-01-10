@@ -1,0 +1,13 @@
+public - Every where in project
+private - Access only in declared class
+protected -Access in declared class as well as in subclasses
+default - Access only in package level
+
+OOPS:
+1.Inheritance
+2.Polymorphism
+3.Abstarction
+4.Encapsulation
+5.Aassociation
+6.Aggregation
+7.Composition

@@ -1,0 +1,8 @@
+how to identify hidden links
+how to identify broken links
+difference between above links - my question
+
+how to select option drop down, without using select class.
+1.one way using select class, but should not use
+2.Get all options and store in List[ by using option tag name], will loop and getText and will select
+

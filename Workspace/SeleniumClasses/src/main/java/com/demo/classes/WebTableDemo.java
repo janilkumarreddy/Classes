@@ -1,0 +1,24 @@
+package com.demo.classes;
+
+import org.testng.annotations.Test;
+
+import com.demo.pages.LoginPage;
+import com.demo.utils.BrowserInit;
+
+public class WebTableDemo extends BrowserInit{
+	
+	LoginPage obj_LoginPage;
+	
+	@Test
+	public void webTableDemo() throws InterruptedException {
+		
+		
+		
+		obj_LoginPage = new LoginPage(driver);
+		obj_LoginPage.fn_Login("Tester", "test");
+		
+		Thread.sleep(1500);
+		
+	}
+
+}

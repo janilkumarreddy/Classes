@@ -1,0 +1,15 @@
+package com.demo.tests;
+
+public class DependsOnGroups {
+	
+	@Test(groups = { "init" })
+	public void serverStartedOk() {}
+	 
+	@Test(groups = { "init" })
+	public void initEnvironment() {}
+	 
+	@Test(dependsOnGroups = { "init.*" })
+	public void method1() {}
+
+
+}

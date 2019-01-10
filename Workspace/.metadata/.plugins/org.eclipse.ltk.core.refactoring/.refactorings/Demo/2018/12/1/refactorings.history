@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;JavaClasses/src&apos;&#x0D;&#x0A;- Original project: &apos;Demo&apos;&#x0D;&#x0A;- Destination element: &apos;JavaClasses/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Demo/src/com.methodOverLoading&#x0D;&#x0A;     Demo/src/com.variables.demo&#x0D;&#x0A;     Demo/src/com.variables.demo1&#x0D;&#x0A;     Demo/src/com.constrcutors&#x0D;&#x0A;     Demo/src/com.returnType" description="Copy packages" destination="=JavaClasses/src" element1="/src&lt;com.methodOverLoading" element2="/src&lt;com.variables.demo" element3="/src&lt;com.variables.demo1" element4="/src&lt;com.constrcutors" element5="/src&lt;com.returnType" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1546157105894" version="1.0"/>
+</session>

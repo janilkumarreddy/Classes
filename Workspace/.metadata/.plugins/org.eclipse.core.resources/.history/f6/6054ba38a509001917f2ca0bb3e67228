@@ -1,0 +1,8 @@
+package com.demo.utils;
+
+public class Snippet {
+	public static void main(String[] args) {
+		\Config\SampleJson.json
+	}
+}
+

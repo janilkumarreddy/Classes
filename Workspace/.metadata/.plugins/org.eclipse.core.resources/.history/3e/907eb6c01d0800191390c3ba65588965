@@ -1,0 +1,12 @@
+package com.demo.utils;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtilByPOI {
+	
+	public void readExcel(String xlPath,String sheetName) {
+		
+		XSSFWorkbook wb= new XSSFWorkbook(xlPath);
+	}
+
+}

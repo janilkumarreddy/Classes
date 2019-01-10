@@ -1,0 +1,27 @@
+package com.demo.tests;
+
+import org.junit.Assert;
+import org.testng.annotations.Test;
+
+public class DependsOnGroups {
+	
+	@Test(groups = { "init" })
+	public void serverStartedOk() {
+		System.out.println("serverStartedOk");
+		//Assert.fail();
+		Assert.assertEquals("Test", "test");
+		System.out.println("After failure");
+	}
+	 
+	@Test(groups = { "init" })
+	public void initEnvironment() {
+		System.out.println("initEnvironment");
+	}
+	 
+	@Test(dependsOnGroups = { "init.*" })
+	public void method1() {
+		System.out.println("method1");
+	}
+
+
+}

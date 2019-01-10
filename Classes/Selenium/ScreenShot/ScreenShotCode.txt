@@ -1,0 +1,26 @@
+
+
+//Below code is by using TakeScreenShot(I) interface, which can take only driver screenshot
+public void getScreenShot(WebDriver driver, String fileName) throws IOException {
+		
+		Random ran = new Random();
+		
+		//TakesScreenshot screenShot = (TakesScreenshot)driver;		
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);		
+		FileUtils.copyFile(file, new File(System.getProperty("user.dir")+"\\Reports\\ScreenShots\\"+fileName+"_"+ran.nextInt(100000)+".png"));
+	}
+	
+
+
+//Below code is by using Robot, which can take entir eopened window screenshot
+	
+	public void getWholeScreenShotUsingRobot(String fileName){
+		Random ran = new Random();
+	    try{
+	        BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
+	        ImageIO.write(image, "jpg", new File(System.getProperty("user.dir")+"\\Reports\\ScreenShots\\"+fileName+"_"+ran.nextInt(100000)+".jpg"));
+	    }
+	    catch(Exception e){
+	        e.printStackTrace();
+	    }
+	}

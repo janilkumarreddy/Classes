@@ -1,0 +1,27 @@
+package com.demo.utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PropertiesFileUtil {
+
+	public static void main(String[] args) throws IOException {
+		
+		String propFilePath = System.getProperty("user.dir")+"\\Config\\config.properties";
+		
+		
+		FileInputStream fis = new FileInputStream(propFilePath);		
+		Properties prop = new Properties();		
+		prop.load(fis);
+
+		
+		System.out.println(prop.getProperty("UserName"));
+	}
+	
+	public String getORProperty(string keyProperty) {
+		
+	}
+
+}

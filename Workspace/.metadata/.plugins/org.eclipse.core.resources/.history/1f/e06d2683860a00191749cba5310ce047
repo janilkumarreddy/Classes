@@ -1,0 +1,32 @@
+package com.demo.tests;
+
+import org.junit.Assert;
+import org.testng.annotations.Test;
+
+public class DependsOnGroups {
+	
+	//If any dependsOnGroups/Methods failed, calling method will get skipped
+	
+	@Test(groups = { "init" })
+	public void serverStartedOk() {
+		System.out.println("serverStartedOk");		
+		Assert.assertEquals("Test", "test");	
+	}
+	 
+	@Test(groups = { "init" })
+	public void initEnvironment() {
+		System.out.println("initEnvironment");
+	}
+	 
+	@Test(dependsOnGroups = { "init.*" })
+	public void method1() {
+		System.out.println("method1");
+	}
+	
+	@Test(groups = { "exit" })
+	public void exit() {
+		System.out.println("method1");
+	}
+
+
+}

@@ -1,0 +1,58 @@
+Locators :
+1.id
+2.name
+3.linkText
+4.partialLinkText
+5.tagName
+6.xpath
+7.cssSelector
+
+
+driver.findElement(By.id("ctl00_MainContent_username"))
+driver.findElement(By.name("ctl00_MainContent_username")
+driver.findElement(By.linkText("logout")
+driver.findElement(By.partialLinkText("log")
+driver.findElements(By.tagName("input")
+driver.findElement(By.xpath("//a[@href='Default.aspx']")
+driver.findElement(By.cssSelector("#<id>")
+
+
+Q)Difference between findElement and findElements?
+findElement : 
+1.return type is WebElement - if one match found atleast
+2.throws NoSuchElementException - if no match found
+3.returns first object/WebElement - if more than one found
+ 
+findElements :
+1.return type is List with all maching objects-if more than one found
+	List<WebElement> name = driver.findElements(By.tagName("a"));
+2.return type is empty List - if no matches found (Note : No exception)
+3.return list of one WebElement if it finds one match
+
+
+
+WebElement link = driver.findElement(By.tagName("a");
+link.click();
+NoSuchElementException
+
+List<WebElement> links = driver.findElements(By.tagName("a")
+s.o.p("Total links "+links.size());
+
+3 - links = <loginWE,logoutWE,logoffWE>
+for(WebElement link : links)
+{
+	s.o.p(link.getText());
+	if(link.getText().equals("logout"){
+		link.click();
+		break;
+	}
+}
+
+
+for(int i=0 ; i <links.size() ; i++){
+	s.o.p(links.get(i).getText();
+}
+
+
+
+

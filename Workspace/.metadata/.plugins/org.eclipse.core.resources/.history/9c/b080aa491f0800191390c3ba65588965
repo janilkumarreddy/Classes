@@ -1,0 +1,28 @@
+package com.demo.utils;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtilByPOI {
+	
+	public void readExcel(String xlPath,String sheetName) throws IOException {
+		
+		XSSFWorkbook wb= new XSSFWorkbook(xlPath);
+		XSSFSheet sheet = wb.getSheet(sheetName);
+		
+		XSSFRow row = sheet.getRow(0);
+		XSSFCell cell = row.getCell(0);
+		
+		System.out.println(cell);
+	}
+
+	
+	public static void main(String args[]) throws IOException {
+		ExcelUtilByPOI obj = new ExcelUtilByPOI();
+		obj.readExcel(System.getProperty("usr.dir")+"\\TestData\\GlobalTestData.xlsx", "TestCases");
+	}
+}

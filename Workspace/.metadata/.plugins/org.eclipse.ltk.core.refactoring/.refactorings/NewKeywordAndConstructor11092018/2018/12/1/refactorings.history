@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.creationAndinitializationOject&apos; to &apos;JavaClasses/src&apos;&#x0D;&#x0A;- Original project: &apos;NewKeywordAndConstructor11092018&apos;&#x0D;&#x0A;- Destination element: &apos;JavaClasses/src&apos;&#x0D;&#x0A;- Original element: &apos;NewKeywordAndConstructor11092018/src/com.creationAndinitializationOject&apos;" description="Copy package" destination="=JavaClasses/src" element1="/src&lt;com.creationAndinitializationOject" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1546157306980" version="1.0"/>
+</session>

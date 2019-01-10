@@ -1,0 +1,21 @@
+package com.demo.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.demo.utils.PropertiesFileUtil;
+
+public class ViewAllOrderesPage {
+
+	private WebDriver driver;
+	PropertiesFileUtil prop;
+
+	public ViewAllOrderesPage(WebDriver driver) {
+		this.driver = driver;
+		//PageFactory.initElements(driver, LoginPage.class);
+	}
+
+	By viewAllOrdersTable = By
+
+}

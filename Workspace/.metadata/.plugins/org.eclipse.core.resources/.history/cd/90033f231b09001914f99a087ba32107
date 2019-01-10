@@ -1,0 +1,14 @@
+package com.demo.utils;
+
+public class ScreenShotUtil {
+	
+	private WebDriver driver;
+
+	public ScreenShotUtil(WeDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void getScreenShot(WebDriver driver) {
+		
+	}
+}

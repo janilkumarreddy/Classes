@@ -1,0 +1,32 @@
+Framework :
+
+Which framework are you using?
+
+1.Keyword driven - Implmetation is bit tuff - maintance is easy
+2.Data driven - Easy to implement - it require technical knowledge
+3.Hybrid - 
+
+Page object model - easy tomaintain,implement and code reuse
+
+Frame work : Set of guidelines 
+
+TestNG :
+
+/**
+
+*MethodName : click(WebElement object)
+*Descirption /: it will click on ny object
+PAramaeters : WebElement object
+Author : <AuthorName1>
+Date : 
+Modified BY : <AuthorNAme2>
+*/
+public void click(WebElement object){
+
+object.click()
+}
+
+com.cg.config
+
+
+

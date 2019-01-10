@@ -1,0 +1,51 @@
+Excel - 
+
+WorkBook
+Sheet(s)
+Row(s) and column(s)
+
+We can use one of below jars to work with excel
+1. POI jar
+2. Fillo jar
+
+1. POI jar
+
+.xls 				.xlsx
+HSSFWorkBook(C)	WorkBook(I)	XSSFWorkBook(C)
+HSSFSheet(C)	Sheet	(I)	XSSFSheet(C)
+HSSFRow(C)	Row	(I)	XSSFRow(C)
+HSSFCell(C)	Cell	(I)	XSSFCell(C)
+
+XSSFWorkbook wb = new XSSFWorkBook(xlfilepath)
+XSSFSheet sheet = wb.getSheet("sheetName");
+XSSFSheet sheet = wb.getSheetAt(index)
+
+XSSFRow rows = sheet.getRow(0);
+int rowCount = sheet.getLastRowNum();//2 means total 3 rows
+
+int colCount = rows.getLastCellNum();//4 means 4 columns
+
+
+2.Fillo jar
+
+select * from emp
+
+Fillo fillo = new Fillo();
+Connection con = fillo.getConnection(xlpath);
+String query = "select * from TestCases";
+
+RecordSet rs = con.executeQuery(query);
+
+
+while(rs.hasNext()){
+
+syso(rs.getField("TCID");
+}
+
+
+
+
+
+
+
+

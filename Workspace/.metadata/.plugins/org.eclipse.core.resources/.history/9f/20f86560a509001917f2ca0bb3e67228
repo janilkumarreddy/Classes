@@ -1,0 +1,11 @@
+package com.demo.utils;
+
+public class JSONFileUtil {
+
+	public static void main(String[] args) {
+		
+		String propFilePath = System.getProperty("user.dir")+"\\Config\\SampleJson.json";
+
+	}
+
+}

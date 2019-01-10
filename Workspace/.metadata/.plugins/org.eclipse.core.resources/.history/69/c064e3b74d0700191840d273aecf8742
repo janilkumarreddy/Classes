@@ -1,0 +1,55 @@
+package com.demo.classes;
+
+
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Naukri {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\lib\\chromedriver_2_45.exe");
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://www.naukri.com/");
+		String mainwindow = driver.getWindowHandle();
+		System.out.println("Parent window : "+mainwindow);
+		driver.findElement(By.xpath("//div[text()='Jobs']")).click();
+		Set<String> winids = driver.getWindowHandles();
+		
+		System.out.println("Number of windows : "+winids.size());
+		String temp = null;
+		for(String tempwin:winids){
+			System.out.println(tempwin);
+			if(!tempwin.equals(mainwindow)) {
+				
+				String winTitle = "";
+				
+				System.out.println("Child window : "+tempwin);
+				driver.switchTo().window(tempwin);	
+				winTitle = driver.getTitle();
+				System.out.println(winTitle);
+				Thread.sleep(5000);
+				try {
+					driver.findElement(By.xpath("//button[text()='Search ']")).click();
+					break;
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+
+
+	}
+
+
+
+
+}
+
+
+

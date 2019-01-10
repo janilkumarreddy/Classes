@@ -1,0 +1,57 @@
+
+<table id=webTableID>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td>Selenium </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+		<td> </td>
+	</tr>
+</table>
+
+WebElement table = driver.findElement(By.id("webTableID");
+
+
+List<WebElement> rows = table.findElements(By.tagName("tr"));
+syso(rows.size());
+
+for(WebElement row : rows)
+{
+	List<WebElement> cols= row.findElements(By.tagName("td"));
+	for(WebElement col : cols){
+		syso(col.getText());
+
+		if(col.getText().equals("selenium"))
+			break;
+	}
+
+}
+

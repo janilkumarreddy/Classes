@@ -1,0 +1,40 @@
+package com.demo.utils;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class JSONFileUtil {
+
+	public static void main(String[] args) {
+		
+		String jsonFilePath = System.getProperty("user.dir")+"\\Config\\SampleJson.json";
+		
+		JSONObject obj = new JSONObject();
+        obj.put("name", "Testing");
+        obj.put("age", new Integer(100));
+
+        JSONArray list = new JSONArray();
+        list.add("Test1");
+        list.add("Test2");
+        list.add("Test3");
+
+        obj.put("Tests", list);
+
+        try (FileWriter file = new FileWriter(jsonFilePath)) {
+
+            file.write(obj.toJSONString());
+            file.flush();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.print(obj);
+
+
+	}
+
+}

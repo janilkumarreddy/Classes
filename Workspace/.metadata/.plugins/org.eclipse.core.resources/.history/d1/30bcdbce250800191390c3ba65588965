@@ -1,0 +1,18 @@
+package com.demo.utils;
+
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Connection;
+import com.codoid.products.fillo.Fillo;
+
+public class ExcelUtilByFillo {
+	
+	public void readXLUsingFillo(String path,String sheetName) throws FilloException {
+		
+		Fillo fillo = new Fillo();
+		Connection connection = fillo.getConnection(path);
+		
+		String query = "seelct * from "+sheetName;
+		RecordSet rs = connection.executeQuery(arg0)
+	}
+
+}

@@ -1,0 +1,95 @@
+1.Login and send mail
+2.login and read inbox
+
+Annotaions in TestNG:
+
+BeforeSuite
+	BeforeTest
+		BeforeClass
+			BeforeMethod
+				@Test
+			AfterMethod
+		AfterClass
+	AfterTest
+AfterSuite
+
+BeforeGroup
+AfterGroup
+
+
+LoginSendMail.java
+
+{
+
+@BeforeSuite
+public void BS(){
+
+}
+
+@AfterSuite
+public void AS(){
+}
+
+@BeforeTest
+public void BT(){
+
+}
+
+@AfterTest
+pulic void AT(){
+}
+
+@BeforeClass
+public void BC(){
+
+}
+
+@AfterClass
+public void AC(){
+}
+
+@AfterMethod
+public void AM(){
+}
+
+@BeforeMethod
+public void BM(){
+}
+
+
+@test
+public void login(){
+}
+
+
+
+@test
+public void sendMail(){
+}
+
+BM
+@test
+AM
+BM
+@test
+AM
+
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+  <test name="Regression suite 1">
+    <classes>
+      <class name="loginsendamail"/>
+	<methods>
+		<include name="login"/>
+	</method>
+    </classes>
+ </test>
+
+<test name="Regression suite 2" >
+    <classes>
+      <class name="com.first.example.demoOne"/>
+      <class name="com.first.example.demoTwo"/>
+      <class name="com.second.example.demoThree"/>
+    </classes>
+ </test>
+</suite>

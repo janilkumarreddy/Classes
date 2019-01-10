@@ -1,0 +1,47 @@
+package com.demo.utils;
+
+import java.util.List;
+
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Connection;
+import com.codoid.products.fillo.Fillo;
+import com.codoid.products.fillo.Recordset;
+
+public class ExcelUtilByFillo {
+
+	public void readXLUsingFillo(String path,String sheetName) throws FilloException {
+
+		Fillo fillo = new Fillo();
+		Connection connection = fillo.getConnection(path);
+
+		//String query = "select * from "+sheetName+" where TCID = Login_1";
+		String query = "select * from "+sheetName;
+		Recordset rs = connection.executeQuery(query);
+
+		while(rs.next()){
+
+			for (String strColumn:recordset.getFieldNames()) {
+				System.out.println(“==================>”+strColumn);
+				System.out.println(recordset.getField(strColumn));
+			}
+
+		}
+
+		/*while(rs.hasNext()) {			
+
+			System.out.println(rs.getField("TCID"));
+			System.out.println(rs.getField("AutomationTCName"));
+			System.out.println(rs.getField("ManualTCName"));
+			List<String> fieldNames = rs.getFieldNames();
+
+			for(String fieldName : fieldNames) {
+				System.out.println(fieldName);
+			}			
+		}*/
+	}
+
+	public static void main(String args[]) throws FilloException {
+		ExcelUtilByFillo obj = new ExcelUtilByFillo();
+		obj.readXLUsingFillo(System.getProperty("user.dir")+"\\TestData\\GlobalTestData.xlsx", "TestCases");
+	}
+}

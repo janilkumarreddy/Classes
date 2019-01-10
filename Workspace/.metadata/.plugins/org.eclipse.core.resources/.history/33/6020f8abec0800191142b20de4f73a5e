@@ -1,0 +1,12 @@
+package com.demo.utils;
+
+public class PropertiesFileUtil {
+
+	public static void main(String[] args) {
+		
+		String propFilePath = System.getProperty("user.dir")+"\\Config\\config.properties";
+		
+
+	}
+
+}

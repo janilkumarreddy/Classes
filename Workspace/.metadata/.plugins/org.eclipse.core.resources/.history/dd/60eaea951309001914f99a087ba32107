@@ -1,0 +1,15 @@
+package com.demo.classes;
+
+import org.testng.annotations.Test;
+
+import com.demo.utils.BrowserInit;
+
+public class WebTableDemo extends BrowserInit{
+	
+	@Test
+	public void webTableDemo() {
+		
+		
+	}
+
+}

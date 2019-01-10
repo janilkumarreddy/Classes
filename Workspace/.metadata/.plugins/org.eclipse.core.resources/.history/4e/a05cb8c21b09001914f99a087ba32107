@@ -1,0 +1,16 @@
+package com.demo.utils;
+
+import org.openqa.selenium.WebDriver;
+
+public class ScreenShotUtil {
+	
+	private WebDriver driver;
+
+	public ScreenShotUtil(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void getScreenShot(WebDriver driver) {
+		
+	}
+}

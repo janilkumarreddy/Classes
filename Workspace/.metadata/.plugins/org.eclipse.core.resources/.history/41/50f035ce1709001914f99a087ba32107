@@ -1,0 +1,31 @@
+package com.demo.tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.demo.pages.LoginPage;
+import com.demo.utils.BrowserInit;
+
+public class ViewAllOrders extends BrowserInit{
+	
+	LoginPage obj_LoginPage;
+	
+	@Test(priority=1)
+	public void login() throws InterruptedException {		
+		
+		obj_LoginPage = new LoginPage(driver);
+		obj_LoginPage.fn_Login("Tester", "test");		
+		Thread.sleep(1500);
+		
+	}
+	
+	@Test(priority=2)
+	public void webTableDemo() {
+		WebElement orderTable = driver.findElement(By.id("ctl00_MainContent_orderGrid"));
+		
+		WebTable rows = orderTable.findElement(By.tagName("tr"));
+	}
+
+}
+

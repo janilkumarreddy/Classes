@@ -1,0 +1,33 @@
+1.Arrays disadvantage : Fixed size
+
+Collection(I)
+Collections(C) - is a class, which have static methods, can do operations onCollection Objects.
+
+EX:
+ArrayList<String> al = new ArrayList<String>;
+Collections.sort(al);
+
+Arrays									Vs 			Collection
+1.Fixed Size								1.Growable in Nature
+2.Memory wise not preferable				2.Preferable
+3.Performance wise preferable				3.Not preferable
+4.homogeneous values						4.homogeneous and heterogeneous
+5.we can declare using int or Integer		5.we can declare only using object type like Integer or String
+
+
+
+Keywords when to use
+extends
+implements
+
+Class C1
+Interface I1
+Class C2
+Interface I2
+
+
+
+C1 extends C2,C3
+C1 implements I1,I3,I4.....
+I1 extends I2
+

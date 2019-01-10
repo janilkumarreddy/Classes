@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CreationAndinitializationOject.java&apos; to &apos;NewKeywordAndConstructor11092018/src/com.creationAndinitializationOject&apos;&#x0D;&#x0A;- Original project: &apos;NewKeywordAndConstructor11092018&apos;&#x0D;&#x0A;- Destination element: &apos;NewKeywordAndConstructor11092018/src/com.creationAndinitializationOject&apos;&#x0D;&#x0A;- Original element: &apos;com.creationAndinitializationOject.CreationAndinitializationOject.java&apos;" description="Copy compilation unit" destination="/src&lt;com.creationAndinitializationOject" element1="/src&lt;com.creationAndinitializationOject{CreationAndinitializationOject.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544089088803" units="1" version="1.0"/>
+</session>

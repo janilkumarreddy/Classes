@@ -1,0 +1,41 @@
+package com.demo.tests;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.demo.pages.LoginPage;
+import com.demo.utils.BrowserInit;
+
+public class ViewAllOrders extends BrowserInit{
+	
+	LoginPage obj_LoginPage;
+	
+	@Test(priority=1)
+	public void login() throws InterruptedException {		
+		
+		obj_LoginPage = new LoginPage(driver);
+		obj_LoginPage.fn_Login("Tester", "test");		
+		Thread.sleep(1500);
+		
+	}
+	
+	@Test(priority=2)
+	public void webTableDemo() {
+	//	WebElement orderTable = driver.findElement(By.id("ctl00_MainContent_orderGrid"));
+		WebElement orderTable = driver.findElement(By.xpath("//table[@class='SampleTable']"));
+		
+		List<WebElement> rows = orderTable.findElements(By.tagName("tr"));
+		System.out.println("Total rows : "+rows.size());
+		
+		//Starting row is 2,as firstrow only heading with agname th
+		for(int i=2 ; i<= rows.size() ; i++) {
+			List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
+			System.out.println("Total cols at row number : "+i+" is - "+cols.size());
+		}
+	}
+
+}
+

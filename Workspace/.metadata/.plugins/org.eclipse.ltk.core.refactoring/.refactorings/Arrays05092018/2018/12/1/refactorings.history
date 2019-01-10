@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;JavaClasses/src/com.arrays&apos;&#x0D;&#x0A;- Original project: &apos;Arrays05092018&apos;&#x0D;&#x0A;- Destination element: &apos;JavaClasses/src/com.arrays&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MultiDimensionArray.java&#x0D;&#x0A;     ArraysDemo.java&#x0D;&#x0A;     ArraysClass06092018.java&#x0D;&#x0A;     ArraySortProgramatically06092018.java" description="Copy compilation units" destination="=JavaClasses/src&lt;com.arrays" element1="/src&lt;{MultiDimensionArray.java" element2="/src&lt;{ArraysDemo.java" element3="/src&lt;{ArraysClass06092018.java" element4="/src&lt;{ArraySortProgramatically06092018.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1546157205207" units="4" version="1.0"/>
+</session>

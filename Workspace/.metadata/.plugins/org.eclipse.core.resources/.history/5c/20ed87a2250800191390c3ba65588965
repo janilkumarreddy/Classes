@@ -1,0 +1,12 @@
+package com.demo.utils;
+
+import com.codoid.products.fillo.Fillo;
+
+public class ExcelUtilByFillo {
+	
+	public void readXLUsingFillo(String path,String sheetName) {
+		
+		Fillo fillo = new Fillo();
+	}
+
+}
