@@ -19,6 +19,11 @@ public class MethodOverLoadingDemo {
 			System.out.println("method int m1");
 		}
 		
+		/*public int m1(int i) {
+			System.out.println("method int m1");
+			return 1;
+		}*/
+		
 		public void m1(String i) {
 			System.out.println("method String m1");
 		}
@@ -34,6 +39,9 @@ public class MethodOverLoadingDemo {
 			
 			return j;
 		}
+		
+		
+
 
 	public static void main(String[] args) {
 		MethodOverLoadingDemo obj = new MethodOverLoadingDemo();

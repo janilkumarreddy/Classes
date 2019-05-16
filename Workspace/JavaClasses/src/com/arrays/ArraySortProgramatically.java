@@ -21,5 +21,7 @@ public class ArraySortProgramatically {
 		System.out.println(Arrays.toString(a));
 
 	}
+	
+	
 
 }

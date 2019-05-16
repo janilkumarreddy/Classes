@@ -1,0 +1,6 @@
+class name
+number of class in one java file
+how many public classes in java file
+id there any depenedency on main method and class name
+
+import : Explicit class import(Fully qualified package name) and implicit class import(.*) - Highly recommanded explicit import because redability of code

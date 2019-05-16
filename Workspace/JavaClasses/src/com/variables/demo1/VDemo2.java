@@ -11,7 +11,7 @@ public class VDemo2 extends VDemo1{
 	}
 
 	public void m1() {
-		System.out.println(yy);
+		System.out.println(protectedVar);
 		//System.out.println(xx);
 	}
 

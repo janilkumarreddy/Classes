@@ -43,9 +43,7 @@ class ICICI extends BankAbstractClass{
 	public ICICI(int i, int j, String name,int age) {
 		super(i,j);
 		this.name = name;
-		this.age = age;
-		
-		
+		this.age = age;		
 	}
 
 	@Override

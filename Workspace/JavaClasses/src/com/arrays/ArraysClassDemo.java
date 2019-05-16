@@ -12,13 +12,12 @@ public class ArraysClassDemo {
 		
 		int e[] = null;
 		int f[] = null;
-		String arr[] = null;
+		String arr[] = null;		
 		
 		//Before using binary search,we have call sort the array first, otherwise non gaurentee on bindarysearch output
 		Arrays.sort(a);
 		//Arrays.sort(a,3,7);
-		System.out.println(Arrays.toString(a));
-		
+		System.out.println(Arrays.toString(a));		
 		
 		int index = Arrays.binarySearch(a, 45);
 		System.out.println("Index of 45 : "+index);
@@ -27,8 +26,7 @@ public class ArraysClassDemo {
 		System.out.println(Arrays.equals(b, c));
 		System.out.println(Arrays.equals(c, d));		
 		System.out.println(Arrays.equals(e, f));//Two null arrays will return true
-		//System.out.println(Arrays.equals(e, arr));//
-		
+		//System.out.println(Arrays.equals(e, arr));//		
 		
 		Arrays.sort(b, 2, b.length);
 		System.out.println(Arrays.toString(b));

@@ -3,12 +3,12 @@ package com.collectionFramework.list;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListDemo
+public class ArrayListDemo
 { 
     public static void main (String[] args) 
     { 
         // Creating a list 
-        List<Integer> l1 = new ArrayList<Integer>(); 
+        List<Integer> l1 = new ArrayList<Integer>();  
         l1.add(0, 1);  // adds 1 at 0 index 
         l1.add(1, 2);  // adds 2 at 1 index
         l1.add(2, 2);
@@ -19,7 +19,7 @@ public class ListDemo
         l2.add(1); //index 0
         l2.add(2); //index 1
         l2.add(3); //index 2
-        System.out.println(l2);  // [1, 2, 3] 
+        System.out.println(l2);  // [1,2, 3] 
         
   
         // Will add list l2 from 1 index 
@@ -36,7 +36,7 @@ public class ListDemo
         //System.out.println(l1.get(5)); //ArrayIndexOutOfBoundsException 
   
         // Replace 0th element with 5 
-        l1.set(0, 5);    
+        l1.set(0, 5);  //  [1,2,3,2, 2]
         System.out.println(l1);  //[5,2,3,2,2]
         
         l1.add(0,10);
@@ -75,8 +75,8 @@ public class ListDemo
         range = l3.subList(2, 4);  
         System.out.println(range);  
         
-        l3.contains("IDE");
-        l.size();
+        l3.contains("IDE");//return boolean
+        l3.size();
         
         int j = 0;
         for(int i=0 ; i < l.size() ;i++) {

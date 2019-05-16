@@ -8,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 public class AlertsFramesWindows {
 	
@@ -21,7 +22,7 @@ public class AlertsFramesWindows {
 	public void validateAlertExistence() {
 		
 		WebElement link =driver.findElement(By.xpath("link"));		
-		link.click();		
+		link.click();
 		
 		try {
 			Alert alertPopup = driver.switchTo().alert();			

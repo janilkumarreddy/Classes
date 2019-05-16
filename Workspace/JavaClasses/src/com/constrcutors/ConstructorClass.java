@@ -15,27 +15,31 @@ import java.sql.Connection;
 
 public class ConstructorClass {
 	
-	int x = 0,y = 0;
-	Connection con= null;
+	/*int x = 0,y = 0;
+	Connection con= null;*/
 	
 	/*void ConstructorClass() {
 		System.out.println("not a constructor");
 	}*/
+	int x,y;
+	String name;
 	
-	public ConstructorClass() {
+	
+	
+	/*public ConstructorClass() {
 		System.out.println("Noargument constructor");
 		print();
 		fn_Sum();
-	}
+	}*/
 	
-	public ConstructorClass(int a, int b) {
+	/*public ConstructorClass(int a, int b) {
 		x=a;
 		y=b;
 		System.out.println(x +" "+y);	
 		
-	}
+	}*/
 	
-	public ConstructorClass(String name, int b) {
+	/*public ConstructorClass(String name, int b) {
 		System.out.println(name);
 		y=b;
 		System.out.println(x);	
@@ -47,17 +51,19 @@ public class ConstructorClass {
 		x=a;
 		y=b;
 		System.out.println(x +" "+y);		
-	}
+	}*/
 
 	public static void main(String[] args) {
 		
 		
 	
-		ConstructorClass obj_ConstructorClass = new ConstructorClass();				
+		//ConstructorClass obj_ConstructorClass = new ConstructorClass();				
 		//ConstructorClass obj_ConstructorClass2 = new ConstructorClass("JAK",20);
-		//ConstructorClass obj_ConstructorClass1 = new ConstructorClass(10,20);
-		
-		obj_ConstructorClass.fn_Sum();
+		/*ConstructorClass obj_ConstructorClass1 = new ConstructorClass(10,20);
+		ConstructorClass obj_ConstructorClass3 = new ConstructorClass(20,30);
+		ConstructorClass obj_ConstructorClass4 = new ConstructorClass(40,50);
+		*/
+		//obj_ConstructorClass.fn_Sum();
 		
 		//PrivateConstructor obj = new PrivateConstructor();
 	}

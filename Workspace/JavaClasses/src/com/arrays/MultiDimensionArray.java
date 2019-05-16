@@ -30,6 +30,15 @@ public class MultiDimensionArray {
 				System.out.println("arrTwo["+i+"]["+j+"] : " +arrTwo[i][j]);
 			}			
 		}
+		
+		 String[][] names = {
+		            {"Mr. ", "Mrs. ", "Ms. "},
+		            {"Smith", "Jones"}
+		        };
+		        // Mr. Smith
+		        System.out.println(names[0][0] + names[1][0]);
+		        // Ms. Jones
+		        System.out.println(names[0][2] + names[1][1]);
 
 	}
 

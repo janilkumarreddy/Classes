@@ -10,11 +10,11 @@ Locators :
 
 driver.findElement(By.id("ctl00_MainContent_username"))
 driver.findElement(By.name("ctl00_MainContent_username")
-driver.findElement(By.linkText("logout")
+driver.findElement(By.linkText("Gmail")
 driver.findElement(By.partialLinkText("log")
-driver.findElements(By.tagName("input")
+driver.findElements(By.tagName("a")
 driver.findElement(By.xpath("//a[@href='Default.aspx']")
-driver.findElement(By.cssSelector("#<id>")
+WebElement name = driver.findElement(By.cssSelector("#<id>")
 
 
 Q)Difference between findElement and findElements?

@@ -3,21 +3,25 @@ package com.variables.demo;
 public class VDemo1{
 
 	//instance variables
-	public int a =10,b=20,sum=0;
+	int deafultVarXX = 10;
+	public int publicVarA =10,publicVarB=20,publicVarSum=0;	
+	private int privateVar = 100;
+	protected int protectedVar=20;
+	
 	static int c = 100; //static variable
 	private static int x=10;
 	
-	int xx = 10;
-	protected int yy=20;
+	
+	
 
 	public static void main(String[] args) {
 		VDemo1 obj = new VDemo1();
 		obj.sum();
 		obj.sub();
 		obj.div();
-		System.out.println(obj.a);
+		System.out.println(obj.publicVarA);
 		System.out.println(c);
-		
+		obj.
 		print();
 	}
 
@@ -27,7 +31,7 @@ public class VDemo1{
 		
 		
 		System.out.println(x+y);
-		System.out.println(a+b);
+		System.out.println(publicVarA+publicVarB);
 		
 		System.out.println(x);
 		
@@ -35,11 +39,11 @@ public class VDemo1{
 	}
 
 	public void sub() {
-		System.out.println(a-b);
+		System.out.println(publicVarA-publicVarB);
 	}
 
 	public void div() {
-		System.out.println(a/b);
+		System.out.println(publicVarA/publicVarB);
 	}
 	
 	public static void print() {
